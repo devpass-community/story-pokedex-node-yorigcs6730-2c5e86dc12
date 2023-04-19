@@ -4,11 +4,7 @@ const getPokemon = async (id) => {
     let result;
     await axios
         .get(apiUrl)
-        .then(
-            function (response) {
-                // Add your solution here!
-            }
-        );
+        .then((response) => {result = response.data});
 
     return result;
 };
